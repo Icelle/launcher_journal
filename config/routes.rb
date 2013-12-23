@@ -1,4 +1,8 @@
 LauncherJournal::Application.routes.draw do
+  resources :journal_entries
+  resources :categories  #this is an obj, generate routes for it
+
+  root 'journal_entries#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
