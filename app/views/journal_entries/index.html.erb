@@ -1,0 +1,18 @@
+<h1>Journal Entries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Published</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render partial: "entry", collection: @journal_entries %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Entry', new_journal_entry_path %>
