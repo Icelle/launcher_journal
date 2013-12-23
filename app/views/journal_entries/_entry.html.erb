@@ -1,0 +1,6 @@
+<tr>
+  <td><%= entry.title %></td>
+  <td><%= time_ago_in_words(entry.created_at) %> ago </td>
+  <td><%= link_to 'Edit', edit_journal_entry_path(entry) %></td>
+  <td><%= link_to 'Delete', entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>
